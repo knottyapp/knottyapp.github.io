@@ -39,6 +39,17 @@
   <p>The Application offers a one-time, non-consumable in-app purchase that unlocks additional features. Payment is processed by Apple (App Store) or Google (Google Play) acting as the merchant of record; the Service Provider does not receive or store your payment card details.</p>
   <p>Purchases are managed through RevenueCat, Inc., which acts as a processor on the Service Provider's behalf. To validate a purchase and restore it across your devices, RevenueCat assigns an anonymous app user identifier and processes purchase history together with technical device information (such as device identifiers, IP address, and country). This does not require an account. You can restore a previous purchase at any time from within the Application, and refunds are handled by the applicable app store in accordance with its policies. See <a href="https://www.revenuecat.com/privacy" rel="noopener" target="_blank">RevenueCat's Privacy Policy</a> for details.</p>
 
+  <h2>Crash and error reporting (optional, off by default)</h2>
+  <p>With your consent, the Application uses Sentry (operated by Functional Software, Inc.) to collect anonymous crash and error diagnostics that help the Service Provider find and fix bugs. This feature is <strong>off by default</strong> and sends nothing until you actively enable it — either through a one-time in-app prompt or the "Crash reporting" toggle in Settings → General. You can withdraw your consent at any time by turning that toggle off; from then on, no further reports are sent.</p>
+  <p>When enabled, a crash or error report contains only: technical diagnostic information about the error (such as the error type and a stack trace), your device model, and your operating system version. It does <strong>not</strong> include any account or personal identifiers (the Application has no accounts), advertising identifiers, your IP address, or any content you create (projects, chart images, photos, or notes). Because no identifier is attached, these reports cannot be linked back to you or your device.</p>
+  <p>The legal basis for this processing is your consent (Article 6(1)(a) GDPR). Crash reports are retained by Sentry for a limited period (up to 90 days) and then deleted automatically. Sentry may process this data on servers inside or outside the EEA; where data is transferred outside the EEA, the safeguards described under "International Data Transfers" below apply. See <a href="https://sentry.io/privacy/" rel="noopener" target="_blank">Sentry's Privacy Policy</a> for details.</p>
+  <p>Because these reports contain no information that identifies you, the Service Provider cannot link a specific report to an individual in order to action a targeted deletion request. Instead, the data is minimized by design (no identifiers, no IP) and deleted automatically after the retention period stated above.</p>
+
+  <h2>Usage analytics (optional, off by default)</h2>
+  <p>With your consent, the Application uses PostHog (operated by PostHog, Inc.) to collect anonymous, aggregated usage analytics that help the Service Provider understand how the Application's features are used and improve them. This feature is <strong>off by default</strong> and shares the same consent control as crash reporting: it sends nothing until you actively enable it — either through the one-time in-app prompt or the "Help improve Knotty" controls in Settings → General. You can withdraw your consent at any time from Settings, after which no further analytics are sent.</p>
+  <p>When enabled, analytics record anonymous product-usage events (such as which screens you open and which features you use) together with basic technical context (your device model, operating system version, and app version). PostHog assigns a randomly generated, anonymous identifier so that events from a single installation can be grouped for aggregate analysis. The Application does <strong>not</strong> send your name, email, any account identifier (the Application has no accounts), advertising identifiers, or any content you create (projects, chart images, photos, or notes), and it does not use this data to identify you or track you across other apps or websites. PostHog receives your IP address in transit to deliver the service but is configured to <strong>discard the client IP address</strong> so that it is not stored with your events; before it is discarded, the IP may be used transiently to derive an approximate (country-level) location. No precise location is collected, and the IP address itself is not retained.</p>
+  <p>The legal basis for this processing is your consent (Article 6(1)(a) GDPR). Analytics data is processed by PostHog in the European Union (EU region). See <a href="https://posthog.com/privacy" rel="noopener" target="_blank">PostHog's Privacy Policy</a> for details.</p>
+
   <h2>Legal basis for processing your personal data</h2>
   <p>Where the GDPR applies, the Service Provider relies on one or more lawful bases to process your personal data, including:</p>
   <ul>
@@ -81,11 +92,11 @@
   <p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p>
   <ul>
     <li><a href="https://www.revenuecat.com/privacy" rel="noopener" target="_blank">RevenueCat</a> (in-app purchase processing)</li>
-    <li><a href="https://posthog.com/privacy" rel="noopener" target="_blank">PostHog</a> (planned — see note below)</li>
-    <li><a href="https://sentry.io/privacy/" rel="noopener" target="_blank">Sentry</a> (planned — see note below)</li>
+    <li><a href="https://sentry.io/privacy/" rel="noopener" target="_blank">Sentry</a> (optional, consent-based crash and error reporting)</li>
+    <li><a href="https://posthog.com/privacy" rel="noopener" target="_blank">PostHog</a> (optional, consent-based usage analytics)</li>
     <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener" target="_blank">GitHub</a> (developer website hosting)</li>
   </ul>
-  <p class="muted">Note: RevenueCat is active in the current release for in-app purchase processing. PostHog (analytics) and Sentry (error reporting) are not yet integrated into the Application; they are listed here in anticipation of a future release that adds those features. This Privacy Policy will be updated to describe the data those services process before they become active.</p>
+  <p class="muted">Note: RevenueCat is active in the current release for in-app purchase processing. Sentry (crash and error reporting) and PostHog (usage analytics) are both integrated as <strong>optional, opt-in</strong> features that are off by default and process data only after you consent — see "Crash and error reporting" and "Usage analytics" above.</p>
 
   <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
   <ul>
@@ -126,7 +137,7 @@
   <h2>How will you be informed of changes to this Privacy Policy?</h2>
   <p>The Service Provider may update this Privacy Policy from time to time. The Service Provider will notify you of material changes by posting the updated Privacy Policy with an effective date. Where required by law, the Service Provider will seek your consent to material changes before they take effect.</p>
   <p>Previous versions of this Privacy Policy will be maintained and made available upon request by contacting the Service Provider at <a href="mailto:knottyapp@gmail.com">knottyapp@gmail.com</a>.</p>
-  <p class="effective">This privacy policy is effective as of 2026-07-27</p>
+  <p class="effective">This privacy policy is effective as of 2026-08-02</p>
 
   <h2>What are your GDPR data protection rights?</h2>
   <p>Under the GDPR, you have the following rights:</p>
